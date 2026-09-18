@@ -1,0 +1,29 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  margin: 0;
+  background-color: #fefefe;
+}
+.canvas-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 800px;
+  height: 800px;
+}
+.info {
+  position: relative;
+  margin-left: 20px;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #ccc;
+}
+#canvas_back {
+  background-color: #ffffff;
+}
