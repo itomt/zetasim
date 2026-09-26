@@ -23,6 +23,8 @@ const SCALE = 100;
 const CALC_COUNT = 10000;
 const CALC_DRAW = 10000;
 
+const P = 2;
+
 // declaration
 let dt = 1/60;
 let speed = 1;
@@ -71,7 +73,7 @@ function taskPerFrame() {
   let starty = 0;
 
   for (let n = 1; n < CALC_COUNT; n++) {
-    let sgn = (n% 2 === 0) ? -1 : 1;
+    let sgn = (n % P === 0) ? (1-P) : 1;
     let size = Math.pow(n, -inx);
     let armx = size * Math.cos (-iny * Math.log(n)) * sgn;
     let army = size * Math.sin(-iny * Math.log(n)) * sgn;
